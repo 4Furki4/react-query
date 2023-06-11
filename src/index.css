@@ -20,7 +20,6 @@ li:hover {
 }
 
 li:nth-child(2n) {
-    /* darkish color please  */
     background-color: #2b2929;
 }
 

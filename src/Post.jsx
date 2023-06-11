@@ -7,7 +7,6 @@ export default function Post({ id, setCurrentPage }) {
         queryKey: ['post', id],
         queryFn: () => getPost(id)
     })
-
     if (postQuery.isLoading) return <h1>Loading</h1>
 
     if (postQuery.error) return <h1>{postQuery.error.message}</h1>
