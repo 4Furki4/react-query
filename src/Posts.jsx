@@ -23,7 +23,8 @@ export default function Posts({ setCurrentPage }) {
     return (
         <>
             {data.map(item =>
-                <li onMouseOver={() => preFetchOnMouseHover(item.id)} key={item.id} onClick={() => setCurrentPage(<Post id={item.id} setCurrentPage={setCurrentPage} />)}>
+                <li onMouseOver={() => preFetchOnMouseHover(item.id)} key={item.id}
+                    onClick={() => setCurrentPage(<Post id={item.id} setCurrentPage={setCurrentPage} />)}>
                     {item.title}
                 </li>)}
         </>
