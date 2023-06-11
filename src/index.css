@@ -1,0 +1,39 @@
+:root {
+    color-scheme: dark;
+    font-size: 2rem;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+li:nth-child(2n) {
+    /* darkish color please  */
+    background-color: #2b2929;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b2929;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
